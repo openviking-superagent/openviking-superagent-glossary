@@ -1,8 +1,11 @@
-# 从看懂术语到提交第一次改动
+# 学习目录
 
-按顺序读，也可以直接查卡住的一步：
+| 领域 | 文档 | 建议顺序 |
+|---|---|---|
+| 流程 | [GitHub Flow 为主，Git Flow 简介](workflow/github-flow.md) | 先理解协作过程 |
+| 流程 | [OpenViking 贡献规则](workflow/openviking-contributing.md) | 再对照项目要求 |
+| 沟通 | [术语与缩写](communication/terms.md) | 碰到缩写随时查 |
+| 沟通 | [职场黑话翻译](communication/workplace-language.md) | 把模糊表达换成可执行要求 |
+| 工具 | [Git 日常使用场景](tools/git-daily.md) | 实际操作时查 |
 
-1. [GitHub Flow 与 Git Flow](git-workflows.md)：分支怎样协作，什么时候 merge 或 rebase。
-2. [给 OpenViking 贡献改动](openviking-contributing.md)：选目标分支、复现问题、验证、提 PR 和找 reviewer。
-
-短词解释继续放在根目录 [术语表](../README.md)，操作教程放在 `guides/`。这里的建议不替代上游规则，项目规则更新时以上游为准。
+[返回技术术语表](../README.md)。旧教程路径保留跳转，避免已有链接失效。

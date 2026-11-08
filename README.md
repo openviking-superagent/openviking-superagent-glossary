@@ -4,26 +4,23 @@
 
 这是社区维护的术语表，不是 OpenViking 官方规范。首版整理自维护者目前可见的社区讨论，不代表已穷尽全部历史消息。只发布通用解释和改写示例，不发布聊天记录、成员身份或私人配置。
 
-更新日期：2026-11-07。大小写通常不改变聊天缩写的意思，但具体含义必须看上下文。示例均为编写示例，不是成员原话。
+更新日期：2026-11-08。大小写通常不改变聊天缩写的意思，但具体含义必须看上下文。示例均为编写示例，不是成员原话。
 
-## 新手协作指南
+## 按场景阅读
 
-从术语走到实际贡献，参见 [学习入口](guides/README.md)：[GitHub Flow / Git Flow](guides/git-workflows.md) 与 [OpenViking 贡献流程](guides/openviking-contributing.md)。
+| 领域 | 入口 | 解决什么问题 |
+|---|---|---|
+| 流程 | [GitHub Flow](guides/workflow/github-flow.md)、[OpenViking 协作规则](guides/workflow/openviking-contributing.md) | 怎么从一个问题走到 PR 合入，Git Flow 仅作补充 |
+| 沟通 | [术语与缩写](guides/communication/terms.md)、[职场黑话](guides/communication/workplace-language.md) | 看懂别人说什么，把要求讲具体 |
+| 工具 | [Git 日常使用](guides/tools/git-daily.md) | 查改动、开分支、同步上游、处理冲突和撤销 |
 
-## 聊天和协作
+技术词典继续保留在下方，完整目录见 [学习入口](guides/README.md)。
 
-| 写法 | 英文或来源 | 大白话 | 例子 / 容易误解的地方 |
-|---|---|---|---|
-| cc | Carbon Copy | 抄送，让某人也知道这件事 | `cc 小王`：小王也来看看；不等于把任务交给他 |
-| CC | Claude Code（在特定讨论中） | Claude 的编程 Agent 产品 | `Codex 和 CC` 中通常指产品；`cc 某人` 通常是抄送 |
-| btw | By The Way | 顺便说一句 | 用来补充一个旁支话题 |
-| LGTM | Looks Good To Me | 我看着没问题 | 是审查意见，不等于已经合并，也不保证没有 bug |
-| ACK | Acknowledgement | 收到，知道了 | 确认收到，不等于已经完成 |
-| PR | Pull Request | 请维护者看看并合入我的修改 | 提 PR 不等于合并 PR |
-| CR | Code Review | 审查代码 | 看改动是否正确、好维护、符合项目要求 |
-| RFC | Request for Comments | 征求意见的文档；也用于互联网规范文档系列 | 某份 RFC 是否是标准，要看其状态；不是所有 RFC 都是正式标准 |
-| IT | Information Technology | 信息技术 | 软件开发是其中一部分 |
-| toB / B2B | Business to Business | 面向企业客户 | 不代表只能由团队使用 |
+## 沟通
+
+[术语与缩写](guides/communication/terms.md)：cc、btw、LGTM、FYI、ASAP、TL;DR 等。
+
+[职场黑话翻译](guides/communication/workplace-language.md)：对齐、颗粒度、闭环等，以及怎样换成具体要求。
 
 ## Agent 和模型
 

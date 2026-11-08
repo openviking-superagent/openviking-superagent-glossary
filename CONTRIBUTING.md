@@ -15,3 +15,5 @@
 不要提交群聊截图、聊天原文、人名、群号、消息链接、内部地址、账号或任何凭据。解释通用术语不需要公开这些内容。
 
 简短术语修改 README.md；较长操作教程放 guides/，并更新 guides/README.md 与根 README 的入口。项目规则须附上游来源、核对日期和适用分支，区分上游要求与教程建议。不需要构建或安装依赖，提交前检查表格列数、相对链接和命令前提。
+
+教程按 guides/workflow（流程）、guides/communication（沟通）、guides/tools（工具）分类。GitHub Flow 为流程主线，Git Flow 简述即可。术语解释保持唯一入口，移动文件保留旧链接跳转。
