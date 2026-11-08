@@ -6,6 +6,10 @@
 
 更新日期：2026-11-07。大小写通常不改变聊天缩写的意思，但具体含义必须看上下文。示例均为编写示例，不是成员原话。
 
+## 新手协作指南
+
+从术语走到实际贡献，参见 [学习入口](guides/README.md)：[GitHub Flow / Git Flow](guides/git-workflows.md) 与 [OpenViking 贡献流程](guides/openviking-contributing.md)。
+
 ## 聊天和协作
 
 | 写法 | 英文或来源 | 大白话 | 例子 / 容易误解的地方 |
