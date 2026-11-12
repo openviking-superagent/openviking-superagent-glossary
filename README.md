@@ -80,6 +80,17 @@
 | PID | Proportional–Integral–Derivative（控制工程） | 比例、积分、微分控制 | 在操作系统语境中又常指 Process ID，进程编号 |
 | SLDD / .sldd | Simulink Data Dictionary | Simulink 的数据字典文件 | 常用于保存模型数据定义；不是普通 Markdown |
 
+## 云计算与 AWS
+
+| 写法 | 英文或来源 | 大白话 | 例子 / 容易误解的地方 |
+|---|---|---|---|
+| AWS | Amazon Web Services | Amazon 提供的云计算平台，包含计算、存储、网络、数据库和权限管理等服务 | AWS 是平台总称，S3、ECS 等是其中的具体服务。见[官方文档](https://docs.aws.amazon.com/) |
+| S3 | Amazon Simple Storage Service | 对象存储服务，把数据作为对象放进存储桶（bucket），通过 key 标识对象 | 适合文件、备份和静态资源等；bucket 中的目录式名字不等于 POSIX 文件系统目录。见[官方文档](https://docs.aws.amazon.com/s3/) |
+| VPC | Amazon Virtual Private Cloud | 在 AWS 中划分出的逻辑隔离虚拟网络，可配置子网、路由和网络访问控制 | VPC 是网络环境，不是一台虚拟机；EC2、部分 ECS 工作负载等资源可放入其中。见[官方文档](https://docs.aws.amazon.com/vpc/) |
+| ECS | Amazon Elastic Container Service | AWS 的容器编排服务，负责运行和管理容器任务与服务 | 可配合 EC2 或 Fargate 运行；ECS 不等于 Kubernetes，AWS 的 Kubernetes 服务是 EKS。见[官方文档](https://docs.aws.amazon.com/ecs/) |
+| EC2 | Amazon Elastic Compute Cloud | 提供可配置虚拟服务器的计算服务 | 一台 EC2 实例类似云上的虚拟机，不代表其上的容器、存储和网络会自动配置好。见[官方文档](https://docs.aws.amazon.com/ec2/) |
+| IAM | AWS Identity and Access Management | 管理 AWS 身份及其权限，常用用户、角色和策略控制谁能做什么 | IAM 管身份权限，安全组管网络流量，两者不能互相替代。见[官方文档](https://docs.aws.amazon.com/iam/) |
+
 ## 常被当成缩写，其实是普通术语
 
 | 词 | 大白话 |
@@ -108,6 +119,7 @@
 
 | 写法 | 英文或来源 | 大白话 | 例子 / 容易误解的地方 |
 |---|---|---|---|
+| stdin | standard input，标准输入 | 程序默认读取输入的数据流，Unix 和类 Unix 系统中的文件描述符通常是 0 | `command < input.txt` 从文件提供 stdin；管道 `first \| second` 会把 `first` 的 stdout 接到 `second` 的 stdin |
 | stdout | standard output，标准输出 | 程序默认写入正常结果的输出流，Unix 和类 Unix 系统中的文件描述符通常是 1 | `command > output.txt` 默认只重定向 stdout，不会顺便保存 stderr |
 | stderr | standard error，标准错误 | 程序默认写入错误、诊断信息的输出流，文件描述符通常是 2 | `command 2> error.txt` 重定向 stderr；把错误与正常结果分开，便于处理数据 |
 | errout | error output 的非正式缩写，或代码中的自定义名称 | 有时被用来表示错误输出，但不是 POSIX 规定的标准流名称 | 看到日志字段或变量名 `errout` 要读项目代码；需要标准错误流时通常写 `stderr`，不要默认两者等价 |
@@ -119,6 +131,11 @@
 | fd | 文件查找工具 | 用较简洁的语法按名称等条件查找文件，默认进行智能大小写匹配并遵守常见的忽略规则 | `fd '\.go$'` 查找 Go 文件；命令语法与 `find` 不同，不能直接互换所有参数。见[项目仓库](https://github.com/sharkdp/fd) |
 | man | manual，手册 | 查看命令、系统调用、文件格式等手册页的命令 | `man rg` 查看 ripgrep 手册，`man 3 printf` 指定第 3 节；`man` 是手册查看方式，不是某个语言。见 [man(1)](https://man7.org/linux/man-pages/man1/man.1.html) |
 | golang / Go | Go 编程语言 | Google 发起的开源编程语言及工具链，常用于服务端、命令行工具和云基础设施 | 正式语言名是 Go，`golang` 常见于官网域名和搜索关键词，不是另一门语言。见[官方网站](https://go.dev/)和[项目仓库](https://github.com/golang/go) |
+| Starship | 跨 shell 的提示符工具 | 用 Rust 编写的命令行提示符，可显示目录、Git 状态、语言版本等信息 | 它定制的是提示符，不会替换 Bash、Zsh 等 shell。见[官方网站](https://starship.rs/)和[项目仓库](https://github.com/starship/starship) |
+| Scoop | Windows 命令行软件安装工具 | 通过命令安装和管理 Windows 软件，常把应用及数据放在用户目录下 | 适合开发工具和便携应用；不等于 Windows 自带的全部包管理能力。见[官方网站](https://scoop.sh/)和[项目仓库](https://github.com/ScoopInstaller/Scoop) |
+| zshell / Zsh | Z shell | 一种 Unix shell，支持交互命令、脚本、补全和主题等扩展 | 标准项目名通常写 Zsh 或 Z shell，`zshell` 是连写形式；Oh My Zsh 是配置框架，不是 Zsh 本身。见[官方网站](https://www.zsh.org/)和[源码镜像](https://github.com/zsh-users/zsh) |
+| BusyBox | 常用 Unix 工具集合 | 把许多精简版命令行工具组合进一个可执行文件，常用于嵌入式 Linux、initramfs 和救援环境 | 可通过 `busybox ls` 或命令软链接调用；各 applet 不一定实现 GNU 工具的全部选项。见[官方网站](https://busybox.net/) |
+| lark-cli | Lark / 飞书官方命令行工具 | 通过命令调用消息、云文档、多维表格、日历等飞书能力，也提供面向 AI Agent 的技能 | 使用前需要配置应用与授权，能否访问数据取决于身份和权限。见[项目仓库](https://github.com/larksuite/cli) |
 
 ## 社区简称与版本简称
 
