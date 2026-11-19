@@ -4,7 +4,8 @@
 |---|---|---|
 | 流程 | [GitHub Flow 为主，Git Flow 简介](workflow/github-flow.md) | 先理解协作过程 |
 | 流程 | [OpenViking 贡献规则](workflow/openviking-contributing.md) | 再对照项目要求 |
-| 沟通 | [术语与缩写](communication/terms.md) | 碰到缩写随时查 |
+| 沟通 | [缩写速查（按字母序）](communication/abbreviations.md) | 碰到不认识的缩写先查这里 |
+| 沟通 | [术语与缩写](communication/terms.md) | 同一个写法有多个意思时看这里 |
 | 沟通 | [职场黑话翻译](communication/workplace-language.md) | 把模糊表达换成可执行要求 |
 | 工具 | [Git 日常使用场景](tools/git-daily.md) | 实际操作时查 |
 
