@@ -4,21 +4,23 @@
 
 这是社区维护的术语表，不是 OpenViking 官方规范。首版整理自维护者目前可见的社区讨论，不代表已穷尽全部历史消息。只发布通用解释和改写示例，不发布聊天记录、成员身份或私人配置。
 
-更新日期：2026-11-12。大小写通常不改变聊天缩写的意思，但具体含义必须看上下文。示例均为编写示例，不是成员原话。
+更新日期：2026-11-19。大小写通常不改变聊天缩写的意思，但具体含义必须看上下文。示例均为编写示例，不是成员原话。
 
 ## 按场景阅读
 
 | 领域 | 入口 | 解决什么问题 |
 |---|---|---|
 | 流程 | [GitHub Flow](guides/workflow/github-flow.md)、[OpenViking 协作规则](guides/workflow/openviking-contributing.md) | 怎么从一个问题走到 PR 合入，Git Flow 仅作补充 |
-| 沟通 | [术语与缩写](guides/communication/terms.md)、[职场黑话](guides/communication/workplace-language.md) | 看懂别人说什么，把要求讲具体 |
+| 沟通 | [缩写速查](guides/communication/abbreviations.md)、[术语与缩写](guides/communication/terms.md)、[职场黑话](guides/communication/workplace-language.md) | 看懂别人说什么，把要求讲具体 |
 | 工具 | [Git 日常使用](guides/tools/git-daily.md) | 查改动、开分支、同步上游、处理冲突和撤销 |
 
 技术词典继续保留在下方，完整目录见 [学习入口](guides/README.md)。
 
 ## 沟通
 
-[术语与缩写](guides/communication/terms.md)：cc、btw、LGTM、FYI、ASAP、TL;DR 等。
+[缩写速查](guides/communication/abbreviations.md)：按字母序查群里出现的英文缩写，一行一个，写清全称和出现场景。不确定含义的缩写不进表。
+
+[术语与缩写](guides/communication/terms.md)：cc、btw、LGTM、FYI、ASAP、TL;DR 等，以及这些词该怎么用。
 
 [职场黑话翻译](guides/communication/workplace-language.md)：对齐、颗粒度、闭环等，以及怎样换成具体要求。
 
@@ -147,8 +149,8 @@
 
 ## 如何补词
 
-参见 [贡献说明](CONTRIBUTING.md)。有新写法时先确认意思：已有缩写的新含义补充到原条目；真正的新缩写增加一行；不确定的先列为待澄清。不要把玩笑或某个人的一次说法写成行业标准。
+参见 [贡献说明](CONTRIBUTING.md)。有新写法时先确认意思：已有缩写的新含义补充到原条目；真正的新缩写增加到[缩写速查](guides/communication/abbreviations.md)对应字母位置；不确定的先列为待澄清。不要把玩笑或某个人的一次说法写成行业标准。
 
-欢迎通过 Issue 或 PR 补充。更新在维护者实际收到相关消息并确认含义后进行；本仓库没有监听或采集群聊的后台程序，不保证实时自动更新。
+欢迎通过 Issue 或 PR 补充。社区里出现的缩写由维护者看到、确认含义后按字母序补一行，不按消息逐条自动收录；本仓库没有监听或采集群聊的后台程序，收录范围止于已确认含义的写法。
 
 文档采用 [MIT License](LICENSE)。
